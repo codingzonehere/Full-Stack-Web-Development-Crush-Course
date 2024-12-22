@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>025 HTML Table Padding & Spacing</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+        }
+        /*
+          Note: If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+        */
+        tr:nth-child(even) {
+          background-color: #D6EEEE;
+        }
+        tr:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        tr {
+          border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {background-color: #D6EEEE;}
+
+    </style>
+</head>
+<body>
+
+    <!--
+        Define an HTML Table: 
+        A table in HTML consists of table cells inside rows and columns.
+    -->
+    <h1>HTML Table - Zebra Stripes: </h1>
+
+    <hr>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+    
+    <hr>
+
+    <a href="https://www.w3schools.com/">Help Line</a>
+
+</body>
+</html>

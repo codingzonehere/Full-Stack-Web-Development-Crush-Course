@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>028 HTML Div Element</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+        }
+        /*Center align a <div> element: */
+        div {
+            margin:auto;
+            width: 30%;
+            display: inline-block;
+        }
+        .mycontainer {
+            width:100%;
+            overflow:auto;
+            background: #c49191;
+        }
+        .mycontainer div {
+            width:33%;
+            float:left;
+        }
+        .mycontainer {
+            display: flex;
+        }
+        .mycontainer > div {
+            width:33%;
+        }
+        .mycontainer .sub-div{
+            background: #ecde14;
+            padding: 10px;
+        }
+        .mycontainer .sub-div1{
+            background: #14ec67;
+        }
+        .mycontainer .sub-div2{
+            background: #14afec;
+        }
+</style>
+    </style>
+</head>
+<body>
+
+    <!--
+       028 HTML Div Element
+    -->
+    <h1>HTML Div Element: </h1>
+
+    <hr>
+    Lorem Ipsum <div>I am a div</div> dolor sit amet.
+
+    <hr>
+    <div class="mycontainer">
+        <div class="sub-div">
+            <h2>London</h2>
+            <p>
+                London is the capital city of England
+            </p>
+            <p>
+                London has over 13 million inhabitants
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <h2>Multiple div elements: </h2>
+    <div class="mycontainer">
+        <div class="sub-div sub-div0">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+    </div>
+      
+    <div class="mycontainer">
+        <div class="sub-div sub-div1">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+    </div>
+      
+    <div class="mycontainer">
+        <div class="sub-div sub-div2">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <a href="https://www.w3schools.com/html/html_div.asp" target="_blank">Click Here To more..</a>
+
+</body>
+</html>
