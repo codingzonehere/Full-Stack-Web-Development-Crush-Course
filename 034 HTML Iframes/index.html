@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>034 HTML Iframes</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        034 HTML Iframes:
+        An HTML iframe is used to display a web page within a web page.
+        <iframe src="url" title="description"></iframe>
+    -->
+    <h1>HTML Iframes: </h1>
+
+    <hr>
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+    <iframe src="https://codingzonehere.github.io/aboutme/" height="500" width="500" title="Iframe Example"></iframe>
+
+    <hr>
+
+    <p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+    <iframe src="https://codingzonehere.github.io/aboutme/" style="height:500px;width:500px" title="Iframe Example"></iframe>
+
+    <hr>
+
+    <h2>Iframe - Remove the Border:</h2>
+    <p>By default, an iframe has a border around it.<br><br>To remove the border, add the style attribute and use the CSS border property:</p>
+
+    <iframe src="https://codingzonehere.github.io/aboutme/" style="border:none; height:500px;width:500px" title="Iframe Example"></iframe>
+
+    <hr>
+
+    <h2>Custom Iframe Border</h2>
+    <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+    <iframe src="https://codingzonehere.github.io/aboutme/" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+    <hr>
+
+    <h2>Iframe - Target for a Link</h2>
+
+    <iframe src="https://codingzonehere.github.io/aboutme/" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+    <p><a href="https://codingzonehere.github.io/local-bank/" target="iframe_a">Local Bank</a></p>
+
+    <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+    <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">Click Here To more..</a>
+
+<script>
+    function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+</script>
+</body>
+</html>

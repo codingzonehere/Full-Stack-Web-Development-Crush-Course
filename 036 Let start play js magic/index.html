@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>036 Let start play js magic</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        036 Let start play js magic:
+    -->
+    <h1>Let start play js magic: </h1>
+
+    <hr>
+
+    <h2>My First JavaScript</h2>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <hr>
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+    <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">Click Here To more..</a>
+
+<script>
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "pic_bulboff.gif"
+        } else {
+            pic = "pic_bulbon.gif"
+        }
+        document.getElementById('myImage').src = pic;
+        }
+</script>
+</body>
+</html>

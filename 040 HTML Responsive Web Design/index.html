@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>040 HTML Responsive Web Design</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu {
+            float: left;
+            width: 20%;
+        }
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        040 HTML Responsive Web Design:
+    -->
+    <h1>HTML Responsive Web Design: </h1>
+    <p>Responsive web design is about creating web pages that look good on all devices!
+
+    A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+
+    <h2>What is Responsive Web Design?</h2>
+    <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):</p>
+    
+    <div style="background-color:#f1f1f1;padding:15px;">
+        <h1>Cinque Terre</h1>
+        <h3>Resize the browser window</h3>
+      </div>
+      
+      <div style="overflow:auto">
+        <div class="menu">
+          <div class="menuitem">The Walk</div>
+          <div class="menuitem">Transport</div>
+          <div class="menuitem">History</div>
+          <div class="menuitem">Gallery</div>
+        </div>
+      
+        <div class="main">
+          <h2>The Walk</h2>
+          <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+          <img src="img_5terre.jpg" style="width:100%">
+        </div>
+      
+        <div class="right">
+          <h2>What?</h2>
+          <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+          <h2>Where?</h2>
+          <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+          <h2>Price?</h2>
+          <p>The Walk is free!</p>
+        </div>
+      </div>
+      
+      
+      <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+    <hr>
+
+    <h3><a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank">Please study here....</a></h3>
+</body>
+</html>

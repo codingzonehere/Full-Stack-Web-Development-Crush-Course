@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>033 Using The id Attribute in JavaScript</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        033 Using The id Attribute in JavaScript
+    -->
+    <h1>Using The id Attribute in JavaScript: </h1>
+
+    <hr>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <hr>
+    
+    <a href="https://www.w3schools.com/html/html_id.asp" target="_blank">Click Here To more..</a>
+
+<script>
+    function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+</script>
+</body>
+</html>

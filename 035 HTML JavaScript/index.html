@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Support all character-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supprt Old Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--When Web page load then the intial zoom scale 1.0-->
+    <meta name="description" content="About content">
+    <meta name="keywords" content="html, HTML, BASIC HTML">
+    <meta name="author" content="Tanvir Ahmed">
+    <link rel="stylesheet" href="./style.css">
+    <title>035 HTML JavaScript</title>
+
+    <!--Set Fav-icon-->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body{
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        035 HTML JavaScript:
+        JavaScript makes HTML pages more dynamic and interactive.
+    -->
+    <h1>HTML JavaScript: </h1>
+
+    <hr>
+
+    <h2>My First JavaScript</h2>
+    <button type="button"
+    onclick="document.getElementById('showDate').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <h3 id="showDate"><span></span></h3>
+
+    <hr>
+
+    <h2>The HTML script Tag:</h2>
+    <p style="text-align: justify;">
+        The HTML script tag is used to define a client-side script (JavaScript).
+
+            The script element either contains script statements, or it points to an external script file through the src attribute.
+            
+            Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+            
+            To select an HTML element, JavaScript most often uses the document.getElementById() method.
+            
+            This JavaScript example writes "Hello JavaScript!" into an HTML element with id="showDate":
+    </p>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="showDate": script tag write blew...</p>
+
+    <hr>
+
+    <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">Click Here To more..</a>
+
+<script>
+    document.getElementById("showDate").innerHTML = "Hello JavaScript!";
+</script> 
+</body>
+</html>
